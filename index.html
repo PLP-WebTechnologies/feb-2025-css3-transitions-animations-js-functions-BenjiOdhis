@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 JavaScript Event Handling Playground</h1>
+  </header>
+
+  <section class="card">
+    <h2>1. Event Handling</h2>
+    <button id="clickBtn">Click Me!</button>
+    <div id="hoverBox">Hover over me!</div>
+    <div id="secretBox">Double-click me! 🤫</div>
+  </section>
+
+  <section class="card">
+    <h2>2. Interactive Elements</h2>
+    <button id="changeTextBtn">Change My Text</button>
+    <div class="tabs">
+      <button class="tab" data-target="tab1">Tab 1</button>
+      <button class="tab" data-target="tab2">Tab 2</button>
+    </div>
+    <div class="tab-content" id="tab1">This is Tab 1 content.</div>
+    <div class="tab-content" id="tab2" style="display:none">This is Tab 2 content.</div>
+  </section>
+
+  <section class="card">
+    <h2>3. Form Validation</h2>
+    <form id="myForm">
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
