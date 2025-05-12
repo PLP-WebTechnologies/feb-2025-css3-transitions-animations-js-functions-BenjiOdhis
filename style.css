@@ -1,87 +1,62 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f0f4f8;
+  background-color: #f4f4f4;
   color: #333;
 }
 
 header h1 {
   text-align: center;
+  margin-bottom: 30px;
   color: #007acc;
 }
 
 .card {
-  background-color: white;
+  background: white;
+  border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 button {
-  padding: 10px 15px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
   background-color: #007acc;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #005fa3;
+/* Animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
-#hoverBox, #secretBox {
-  margin-top: 10px;
-  padding: 15px;
-  background-color: #eee;
-  border: 2px dashed #ccc;
-  border-radius: 5px;
+.bouncy {
+  animation: bounce 0.6s ease-in-out;
 }
 
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+/* Theme Preferences */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
-.tab {
-  background-color: #ddd;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.1);
 }
 
-.tab:hover {
-  background-color: #ccc;
-}
+body.dark-mode button {
+  background-color: #444;
+} 
 
-.tab-content {
-  margin-top: 15px;
+select {
   padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fafafa;
-  border-radius: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 8px;
-  margin: 6px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-form button[type="submit"] {
-  background-color: #28a745;
   margin-top: 10px;
-}
-
-form button[type="submit"]:hover {
-  background-color: #218838;
+  font-size: 1rem;
 }
